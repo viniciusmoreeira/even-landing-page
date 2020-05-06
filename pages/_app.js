@@ -1,14 +1,11 @@
-import React from 'react'
-import App from 'next/app'
-import { Grommet, grommet as grommetTheme } from 'grommet'
+import React from 'react';
+import App from 'next/app';
+
+import '../styles/global.scss';
 
 export default class MyApp extends App {
   render() {
-    const { Component, pageProps } = this.props
-    return (
-      <Grommet theme={grommetTheme}>
-        <Component {...pageProps} />
-      </Grommet>
-    )
+    const { Component, pageProps } = this.props;
+    return <Component {...pageProps} />;
   }
 }

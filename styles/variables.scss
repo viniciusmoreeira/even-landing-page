@@ -1,0 +1,24 @@
+//Colors
+
+$brand: #fceee8;
+$primaryDark: #232427;
+$primaryLight: #fef8f6;
+$accent: #f09d8e;
+
+//Mixins
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+@mixin maxWidth {
+  max-width: 1200px;
+}
