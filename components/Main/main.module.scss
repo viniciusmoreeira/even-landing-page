@@ -17,8 +17,8 @@
 
   span {
     color: white;
-    background: url('https://images.unsplash.com/photo-1561835503-648c2f1169d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')
-      no-repeat center center / cover;
+    background: url('https://images.unsplash.com/photo-1562619371-b67725b6fde2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')
+      no-repeat center bottom / cover;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@
 }
 
 .outer_box {
-  background: url('https://images.unsplash.com/photo-1555448248-2571daf6344b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')
+  background: url('https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')
     no-repeat center center / cover;
   width: 60rem;
   height: 60rem;
@@ -58,13 +58,12 @@
     h1 {
       font-size: 15rem;
       font-weight: bold;
-      background: url('https://images.unsplash.com/photo-1555448248-2571daf6344b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')
+      background: url('https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')
         no-repeat center center / cover;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: cover !important;
-      text-shadow: rgba(255, 255, 255, 0.1) 0px 3px 3px;
     }
   }
 }
@@ -84,5 +83,97 @@
     width: 30rem;
     float: right;
     margin-top: 10rem;
+  }
+}
+
+.app {
+  @include maxWidth;
+  @include grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+
+  .iphone {
+    @include flex;
+    justify-content: center;
+    position: relative;
+
+    img {
+      height: 600px;
+    }
+  }
+}
+
+.app_title {
+  @include flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 1.7rem;
+    width: 30rem;
+  }
+
+  .app_store {
+    h3 {
+      font-size: 2.2rem;
+      font-weight: normal;
+      margin: 1rem 0;
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .stars {
+      @include flex;
+      justify-content: space-between;
+      width: 20rem;
+
+      svg {
+        font-size: 2.5rem;
+        color: #f5d975;
+        margin: 1rem 0;
+      }
+    }
+
+    button {
+      @include flex;
+      justify-content: center;
+      background-color: #2e2f35;
+      width: 20rem;
+      padding: 1.5rem 0;
+      border-radius: 8px;
+      margin: 2rem 0;
+
+      svg {
+        font-size: 3.5rem;
+        color: white;
+        margin-right: 0.5rem;
+      }
+
+      p {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 1rem;
+        width: fit-content;
+        text-align: left;
+
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }

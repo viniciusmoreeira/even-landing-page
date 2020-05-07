@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaStar, FaApple, FaGooglePlay } from 'react-icons/fa';
+
 import s from './main.module.scss';
 
 export default function Main() {
@@ -32,6 +34,62 @@ export default function Main() {
             Over 400,000 happy employees are already on the road to financial
             wellness. Join them.
           </p>
+        </div>
+
+        <div className={s.app}>
+          <div className={s.iphone}>
+            <img src='/images/iphone.png' alt='' />
+          </div>
+
+          <div className={s.app_title}>
+            <h2>
+              Get paid <br />
+              on demand.
+            </h2>
+            <p>
+              Send your pay to your bank account in one business day, or pick it
+              up instantly at any U.S Walmart. No hidden fees, no loans, no
+              interest.
+            </p>
+
+            <div className={s.app_store}>
+              <div className={s.stars}>
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </div>
+              <h3>
+                4.9 <span>out of 5</span>
+              </h3>
+              <p>16.7k reviews</p>
+              <button>
+                <FaApple />
+                <p>
+                  Download on the <span>AppStore</span>
+                </p>
+              </button>
+
+              <div className={s.stars}>
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </div>
+              <h3>
+                4.8 <span>out of 5</span>
+              </h3>
+              <p>16.6k reviews</p>
+              <button>
+                <FaGooglePlay />
+                <p>
+                  GET IT ON <span>GooglePlay</span>
+                </p>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
