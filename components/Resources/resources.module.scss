@@ -1,0 +1,71 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  height: 100vh;
+  margin-top: 10rem;
+
+  .inner {
+    @include grid;
+    grid-template-columns: 1fr;
+    @include maxWidth;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+    .resources {
+      height: 100%;
+      width: 90%;
+
+      h5 {
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+    }
+
+    .news {
+      height: 100%;
+      width: 90%;
+
+      h5 {
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.grid {
+  @include grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: 2rem;
+  height: 60%;
+
+  div {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    h4 {
+      font-size: 3rem;
+    }
+
+    h6 {
+      font-size: 2.5rem;
+      font-weight: normal;
+      width: 20rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    a {
+      font-size: 1.4rem;
+      color: $primaryDark;
+      text-decoration: none;
+      border-bottom: 6px solid $accent;
+    }
+  }
+}

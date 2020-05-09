@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
 
-import { Header, Main, About } from '../components';
+import { Header, Main, About, Resources } from '../components';
 
 export default () => (
   <>
@@ -34,6 +34,7 @@ export default () => (
     <Header />
     <Main />
     <About />
+    <Resources />
 
     <div>
       <span>© {new Date().getFullYear()} Even Responsible Finance, Inc.</span>

@@ -44,12 +44,30 @@ export default function Header() {
       </div>
 
       <div className={s.inferior}>
-        <div className={s.inferior_inner}>
+        <div className={s.inner}>
           <div className={s.title}>
-            <h1>We don't:</h1>
-            <h2>
-              Sell data. Sell ads. Earn interest on your money. <span></span>
-            </h2>
+            <div>
+              <h1>We don't:</h1>
+
+              <h2>
+                Sell data. Sell ads. Earn interest on your money. <span></span>
+              </h2>
+            </div>
+
+            <div className={s.block}>
+              <div />
+
+              <div>
+                <h3>
+                  To create the opportunity for every single person to have
+                  access to the toolset they need to make progress, we needed to
+                  fundamentally rethink the financial system model. We only make
+                  money on your subscription which aligns our incentives with
+                  your best interest.
+                  <button>How we make money</button>
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
