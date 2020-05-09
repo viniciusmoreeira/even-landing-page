@@ -13,7 +13,6 @@
   font-size: 7rem;
   font-weight: bold;
   color: $primaryDark;
-  max-width: 98rem;
 
   span {
     color: white;
@@ -28,7 +27,6 @@
 
 .logos {
   width: 100%;
-  max-width: 98rem;
   @include flex;
   justify-content: space-between;
   margin: 15rem auto;
@@ -91,6 +89,7 @@
   @include grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
+  height: 700px;
 
   .iphone {
     @include flex;

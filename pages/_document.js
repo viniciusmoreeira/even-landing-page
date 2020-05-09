@@ -1,4 +1,4 @@
-import Document from 'next/document';
+import Document, { Html } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
       return {
         ...initialProps,
         styles: (
-          <>
+          <Html lang='en'>
             {initialProps.styles}
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
@@ -25,7 +25,7 @@ export default class MyDocument extends Document {
               rel='stylesheet'
             />
             {sheet.getStyleElement()}
-          </>
+          </Html>
         ),
       };
     } finally {

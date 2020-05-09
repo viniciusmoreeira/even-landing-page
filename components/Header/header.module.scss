@@ -21,7 +21,6 @@
 }
 
 .nav {
-  @include maxWidth;
   width: 90%;
   margin: auto;
 
@@ -33,7 +32,6 @@
 }
 
 .hero {
-  @include maxWidth;
   @include flex;
   flex-direction: column;
   justify-content: space-around;
