@@ -1,8 +1,8 @@
 import React from 'react';
 
-import s from './resources.module.scss';
+import s from './articles.module.scss';
 
-export default function Header() {
+export default function Articles() {
   return (
     <>
       <div className={s.wrapper}>

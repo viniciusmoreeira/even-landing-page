@@ -5,7 +5,7 @@ import Lottie from './Lottie';
 
 import s from './about.module.scss';
 
-export default function Header() {
+export default function About() {
   return (
     <>
       <div className={s.superior}>

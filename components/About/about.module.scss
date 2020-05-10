@@ -5,7 +5,6 @@
   background-color: #fae4df;
 
   .inner {
-    width: 90%;
     @include maxWidth;
     @include grid;
     grid-template-columns: repeat(3, 1fr);
@@ -26,13 +25,18 @@
           font-weight: bold;
           list-style: none;
           cursor: pointer;
-          color: #59aee3;
+          color: #e3beb3;
           transition: all 200ms ease-in;
           position: relative;
 
-          &:not(:hover) {
-            color: #e3beb3;
+          &:first-child {
+            color: #59aee3;
+            margin-left: 3rem;
           }
+
+          // &:not(:hover) {
+          //   color: #e3beb3;
+          // }
 
           &:hover {
             margin-left: 3rem;
@@ -91,7 +95,6 @@
     @include flex;
     flex-direction: column;
     @include maxWidth;
-    width: 90%;
     height: 100%;
     margin: auto;
 
@@ -137,7 +140,7 @@
           color: $brand;
           width: 20rem;
           padding: 2rem 0;
-          border-radius: 6px;
+          border-radius: 4px;
           margin: 5rem 0;
           font-size: 1.4rem;
         }

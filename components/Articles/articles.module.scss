@@ -2,19 +2,18 @@
 
 .wrapper {
   height: 100vh;
-  margin-top: 10rem;
 
   .inner {
     @include grid;
     grid-template-columns: 1fr;
     @include maxWidth;
-    width: 90%;
     height: 100%;
     margin: auto;
 
     .resources {
       height: 100%;
-      width: 90%;
+      width: 100%;
+      margin-top: 10rem;
 
       h5 {
         font-size: 1.2rem;
@@ -24,7 +23,7 @@
 
     .news {
       height: 100%;
-      width: 90%;
+      width: 100%;
 
       h5 {
         font-size: 1.2rem;
