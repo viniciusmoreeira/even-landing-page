@@ -25,18 +25,13 @@
           font-weight: bold;
           list-style: none;
           cursor: pointer;
-          color: #e3beb3;
+          color: #59aee3;
           transition: all 200ms ease-in;
           position: relative;
 
-          &:first-child {
-            color: #59aee3;
-            margin-left: 3rem;
+          &:not(:hover) {
+            color: #e3beb3;
           }
-
-          // &:not(:hover) {
-          //   color: #e3beb3;
-          // }
 
           &:hover {
             margin-left: 3rem;
