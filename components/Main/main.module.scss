@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/breakpoints.scss';
 
 .wrapper {
   width: 90%;
@@ -14,6 +15,10 @@
   font-weight: bold;
   color: $primaryDark;
 
+  @include breakpoint(phone) {
+    font-size: 4.5rem;
+  }
+
   span {
     color: white;
     background: url('https://images.unsplash.com/photo-1562619371-b67725b6fde2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')
@@ -26,13 +31,23 @@
 }
 
 .logos {
-  width: 100%;
   @include flex;
+  width: 100%;
   justify-content: space-between;
-  margin: 15rem auto;
+  margin: 15rem 0;
+
+  @include breakpoint(phone) {
+    @include grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
 
   img {
     width: 18rem;
+
+    @include breakpoint(phone) {
+      width: 100%;
+    }
   }
 }
 
@@ -43,6 +58,11 @@
   height: 60rem;
   padding: 3rem;
   box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.8);
+
+  @include breakpoint(phone) {
+    width: 100%;
+    height: 100%;
+  }
 
   .inner_box {
     @include grid;
@@ -62,6 +82,10 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: cover !important;
+
+      @include breakpoint(phone) {
+        font-size: 10rem;
+      }
     }
   }
 }
@@ -69,6 +93,10 @@
 .subtitle {
   width: 60rem;
   margin: 10rem;
+
+  @include breakpoint(phone) {
+    width: 100%;
+  }
 
   h2 {
     font-size: 2.5rem;
@@ -88,8 +116,15 @@
   @include maxWidth;
   @include grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 100px;
-  height: 700px;
+  margin-top: 10rem;
+  height: 70rem;
+
+  @include breakpoint(phone) {
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    gap: 5rem;
+    height: 100%;
+  }
 
   .iphone {
     @include flex;
@@ -97,7 +132,11 @@
     position: relative;
 
     img {
-      height: 600px;
+      height: 60rem;
+
+      @include breakpoint(phone) {
+        height: 45rem;
+      }
     }
   }
 }
@@ -112,6 +151,10 @@
   h2 {
     font-size: 2.5rem;
     font-weight: normal;
+
+    @include breakpoint(phone) {
+      margin: 4rem 0;
+    }
   }
 
   p {
@@ -138,6 +181,10 @@
       @include flex;
       justify-content: space-between;
       width: 20rem;
+
+      @include breakpoint(phone) {
+        margin-top: 4rem;
+      }
 
       svg {
         font-size: 2.5rem;

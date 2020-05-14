@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './breakpoints.scss';
 
 * {
   margin: 0;
@@ -21,4 +22,16 @@ body {
 
 button {
   cursor: pointer;
+}
+
+/************************ Responsive Style Section ************************/
+
+html {
+  @include breakpoint(phone) {
+    font-size: 50%;
+  }
+
+  @include breakpoint(tablet) {
+    font-size: 55%;
+  }
 }

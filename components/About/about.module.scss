@@ -1,8 +1,13 @@
 @import '../../styles/variables.scss';
+@import '../../styles/breakpoints.scss';
 
 .superior {
   height: 100vh;
   background-color: #fae4df;
+
+  @include breakpoint(phone) {
+    padding: 5rem 0;
+  }
 
   .inner {
     @include maxWidth;
@@ -12,11 +17,25 @@
     height: 100%;
     margin: auto;
 
+    @include breakpoint(phone) {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+      width: 90%;
+    }
+
+    @include breakpoint(tablet) {
+      width: 90%;
+    }
+
     .left {
       h3 {
         font-size: 6rem;
         font-weight: bold;
         color: $primaryDark;
+
+        @include breakpoint(phone) {
+          font-size: 3.5rem;
+        }
       }
 
       ul {
@@ -28,6 +47,10 @@
           color: #59aee3;
           transition: all 200ms ease-in;
           position: relative;
+
+          @include breakpoint(phone) {
+            font-size: 3.5rem;
+          }
 
           &:not(:hover) {
             color: #e3beb3;
@@ -46,6 +69,10 @@
       justify-content: space-evenly;
       height: 100%;
       width: 20rem;
+
+      @include breakpoint(phone) {
+        display: none;
+      }
 
       h4 {
         font-size: 2.2rem;
@@ -86,6 +113,10 @@
 .inferior {
   height: 100vh;
 
+  @include breakpoint(phone) {
+    margin: 10rem 0;
+  }
+
   .inner {
     @include flex;
     flex-direction: column;
@@ -103,12 +134,29 @@
       h1 {
         font-size: 20rem;
         color: #352e2e;
+
+        @include breakpoint(phone) {
+          font-size: 8rem;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 17em;
+        }
       }
 
       h2 {
         position: relative;
         font-size: 4rem;
         width: fit-content;
+
+        @include breakpoint(phone) {
+          font-size: 1.65rem;
+          margin-top: 3rem;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 3.5rem;
+        }
 
         &::after {
           content: '';

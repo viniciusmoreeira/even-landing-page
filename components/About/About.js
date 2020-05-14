@@ -64,8 +64,8 @@ export default function About() {
                   fundamentally rethink the financial system model. We only make
                   money on your subscription which aligns our incentives with
                   your best interest.
-                  <button>How we make money</button>
                 </h3>
+                <button>How we make money</button>
               </div>
             </div>
           </div>
