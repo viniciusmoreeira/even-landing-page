@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 import { FaStar, FaApple, FaGooglePlay } from 'react-icons/fa';
 
 import s from './main.module.scss';
@@ -12,12 +13,12 @@ export default function Main() {
           <span> reduce employee turnover.</span>
         </div>
 
-        <div className={s.logos}>
+        <Fade cascade direction='top' damping='0.3' className={s.logos}>
           <img src='/images/allstate.png' alt='' />
           <img src='/images/kronos.png' alt='' />
           <img src='/images/sams.png' alt='' />
           <img src='/images/walmart.png' alt='' />
-        </div>
+        </Fade>
 
         <div className={s.outer_box}>
           <div className={s.inner_box}>
@@ -28,15 +29,15 @@ export default function Main() {
           </div>
         </div>
 
-        <div className={s.subtitle}>
+        <Fade cascade direction='top' damping='0.3' className={s.subtitle}>
           <h2>Join industry leading teams using Even.</h2>
           <p>
             Over 400,000 happy employees are already on the road to financial
             wellness. Join them.
           </p>
-        </div>
+        </Fade>
 
-        <div className={s.app}>
+        <Fade cascade className={s.app}>
           <div className={s.iphone}>
             <img src='/images/iphone.png' alt='' />
           </div>
@@ -90,7 +91,7 @@ export default function Main() {
               </button>
             </div>
           </div>
-        </div>
+        </Fade>
       </div>
     </>
   );

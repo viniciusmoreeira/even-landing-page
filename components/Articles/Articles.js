@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 import s from './articles.module.scss';
 
@@ -6,7 +7,7 @@ export default function Articles() {
   return (
     <>
       <div className={s.wrapper}>
-        <div className={s.inner}>
+        <Fade cascade className={s.inner}>
           <div className={s.resources}>
             <h5>Resources</h5>
 
@@ -81,7 +82,7 @@ export default function Articles() {
               </div>
             </div>
           </div>
-        </div>
+        </Fade>
       </div>
     </>
   );
